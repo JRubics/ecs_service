@@ -1,0 +1,13 @@
+[
+    {
+        "name": "${container_name}",
+        "image": "${docker_image}",
+        "portMappings": [
+            {
+                "containerPort": ${application_port},
+                "hostPort": ${application_port},
+                "protocol": "tcp"
+            }
+        ]
+    }
+]
